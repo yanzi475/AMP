@@ -1,0 +1,201 @@
+
+<!doctype html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <title>关于 | Jerry Qu 的小站</title>
+    <link rel="canonical" href="https://imququ.com/post/about.html" >
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <style amp-custom>
+        body {
+            margin: 0;
+            font-family: "-apple-system","Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        .warning {
+            color: red;
+        }
+        .ad-container {
+            display: flex;
+            justify-content: center;
+        }
+        .content-container p {
+            line-height: 24px;
+        }
+        header,
+        .article-body {
+            padding: 15px;
+        }
+        .lightbox {
+            background: #222;
+        }
+        .full-bleed {
+            margin: 0 -15px;
+        }
+        .lightbox-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox-content p {
+            color: #fff;
+            padding: 15px;
+        }
+        .lightbox amp-img {
+            width: 100%;
+        }
+        figure {
+            margin: 0;
+        }
+        figcaption {
+            color: #6f757a;
+            padding: 15px 0;
+            font-size: .9em;
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            background: #f4f4f4;
+            padding: 0 15px;
+            font-size: .8em;
+            border: solid #dcdcdc;
+            border-width: 1px 0;
+        }
+        .header-time {
+            color: #a8a3ae;
+            font-size: 12px;
+        }
+        .author p {
+            margin: 5px;
+        }
+        .byline {
+            display: inline-block;
+        }
+        .byline p {
+            line-height: normal;
+        }
+        .byline .brand {
+            color: #6f757a;
+        }
+        .standfirst {
+            color: #6f757a;
+        }
+        .mailto {
+            text-decoration: none;
+        }
+        #author-avatar {
+            margin: 10px;
+            border: 5px solid #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        h1 {
+            margin: 5px 0;
+            font-weight: normal;
+        }
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            background: #f4f4f4;
+        }
+        hr {
+            margin: 0;
+        }
+        amp-img {
+            background-color: #f4f4f4;
+        }
+    </style>
+    <script async custom-element="amp-lightbox" src="./amp-lightbox-0.1.js"></script>
+    <style>body {opacity: 0}</style><noscript><style>body {opacity: 1}</style></noscript>
+    <script async src="./v0.js"></script>
+</head>
+<body>
+<header>
+    <div class="brand-logo">Jerry Qu 的小站</div>
+</header>
+<main role="main">
+    <article>
+        <figure>
+            <amp-img
+                    src="https://st.imququ.com/static/img/other/2.jpg"
+                    placeholder layout="responsive"
+                    width="500" height="380"  on="tap:headline-img-lightbox">
+            </amp-img>
+        </figure>
+        <amp-lightbox id="headline-img-lightbox" class="lightbox"
+                      layout="nodisplay">
+            <div class="lightbox-content">
+                <amp-img id="floating-headline-img"
+                         src="https://st.imququ.com/static/img/other/2.jpg"
+                         placeholder layout="responsive"
+                         width="500" height="380">
+                </amp-img>
+                <p>测试图片。</p>
+            </div>
+        </amp-lightbox>
+        <div class="content-container">
+            <header>
+                <h1 itemprop="headline">关于</h1>
+                <time class="header-time" itemprop="datePublished" datetime="2015-09-14 13:00">September 14, 2015</time>
+                <p class="standfirst">这是关于我的介绍。</p>
+            </header>
+            <div class="author">
+                <amp-img src="https://imququ.com/static/img/blog/ququ.jpg" id="author-avatar"
+                         placeholder
+                         height="50" width="50">
+                </amp-img>
+                <div class="byline">
+                    <p>by <span itemscope itemtype="http://schema.org/Person"itemprop="author"><b>Jerry Qu</b></span></p>
+                    <p class="brand">关注 Web 端开发</p>
+                </div>
+            </div>
+            <div class="article-body" itemprop="articleBody">
+                <p class="warning">声明：本站所有文章均为本人原创，仅代表个人思想，与其他任何人或组织无关！</p>
+                <h3>个人介绍</h3>
+                <p>
+                    博主名叫屈光宇，网上代号习惯用 JerryQu、qgy18，近几年来朋友们都叫我屈屈或 QuQu。08 年毕业于武汉科技大学自动化专业，湖北黄冈罗田县人。目前专注于 WEB 前端开发。
+                </p>
+                <p>
+                    推荐通过邮件与我联系：
+                    <a href="mailto:quguangyu@gmail.com">quguangyu@gmail.com</a>。其他联系方式：<a href="https://twitter.com/qgy18">Twitter</a>、<a href="http://weibo.com/jerryqu">Sina 微博</a>。
+                </p>
+                <h3>工作经历</h3>
+                <ul>
+                    <li><strong>奇虎 360，前端开发，北京，2011.8 - ?</strong></li>
+                    <li>百度，前端开发，北京，2008.4 - 2011.5</li>
+                </ul>
+                <h3>版权说明</h3>
+                <p>
+                    本站是我用来随便记录原创东东的，也会存放一些自己写的实验品。<del>除非单独说明，个人转载这里的原创内容，请遵循「<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh">署名-非商业性使用-相同方式共享</a>」的创作共享协议；万一不小心真有商业性使用，请先联系我，方式在上几行。</del>
+                </p>
+                <p>
+                    <strong>更新：</strong>从 2016 年开始，本站采用更开放的「<a href="http://creativecommons.org/licenses/by/4.0/deed.zh">署名 4.0 国际（CC BY 4.0）</a>」创作共享协议。通俗地讲，只要在使用时署名，那么使用者可以对本站所有原创内容进行转载、节选、混编、二次创作，允许商业性使用。
+                </p>
+                <p>
+                    <amp-img
+                            src="https://imququ.com/static/img/blog/cc-by.png"
+                            width="210" height="100" layout="fixed"
+                            alt="by-nc-sa">
+                    </amp-img>
+                </p>
+                <p>
+                    本站欢迎各种形式的转载。Web 技术更新很快，本站很多文章都具有实效性，我会及时更新原文，但转载的文章无法通知更新。为了不给读者造成困扰或误导，请大家在转载时保留文章最后的出处。
+                </p>
+                <footer>
+                    <div class="brand-logo">ImQuQu.COM</div>
+                </footer>
+            </div>
+        </div>
+    </article>
+</main>
+</body>
+</html>

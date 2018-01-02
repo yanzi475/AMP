@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "title": "AMP google search",
+      "url": "https://www.google.com.hk/"
+    },
+
+    {
+      "title": "TEST AMP",
+      "url": "https://ampbyexample.com/"
+    },
+    {
+      "title": "EXAMPLE ONE",
+      "url": "https://ampstart.com/"
+    },
+    {
+      "title": "EXAMPLE TWO",
+      "url": "https://www.ampproject.org/"
+    },
+    {
+      "title": "AMP Start",
+      "url": "https://ampstart.com/"
+    }
+  ]
+}

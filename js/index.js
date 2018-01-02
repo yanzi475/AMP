@@ -15,7 +15,7 @@ const built_in_db = require('./db.json'), // built-in database
     local_r_file = path.join(process.cwd(), '/test/r.json'); // project specific router file
 
 let port = 3002,
-    hj_wrap = true, // wrap resp data
+    wrap = true, // wrap resp data
     server,
     fixed_db = {}; // in-memory fixed merged database
 
@@ -73,16 +73,16 @@ const start = () => {
         if (req.method === 'POST' || req.method === 'PUT' || req.method === 'PATCH' || req.method === 'DELETE') {
             db_data = fixed_db[req.path.replace('/', '')] || {};
         }
-        // wrap for hj
+        // wrap for
         let res_json = {};
-        if (!hj_wrap || req.query._no_hj) {
+        if (!wrap || req.query._no) {
             // no wrap
             Object.assign(res_json, db_data);
         } else {
             // wrap
             if (db_data.hasOwnProperty('ret_data')) {
                 Object.assign(res_json, db_data);
-            } else { // wrap for hj
+            } else { // wrap for
                 res_json.ret_data = db_data;
             }
             const _ret_code = req.query._ret_code;
@@ -116,7 +116,7 @@ if (argv._ && argv._[0] === 'dev-srv') {
     if (argv.p) {
         port = parseInt(argv.p);
     }
-    hj_wrap = !argv.nohj;
+    wrap = !argv.no;
     start();
     watch();
 }
